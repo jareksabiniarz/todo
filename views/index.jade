@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  h1= title
+  h2= info
+  p Welcome to #{title}
+  form#taskForm(action="/newTask", method="POST")
+    label Task title: 
+    input#tit(name='title', type='text')
+    br
+    textarea#des(rows='4', cols='50', name='description', form='taskForm', placeholder='Description...')
+    br
+    button#dataSend(type='submit') Add
+    br
+  br
+  button(type='submit') Remove
+  button(type='submit') Clear
+  #taskContainer
+    h2 Title: #{taskTitle}
+    h3 Description: #{taskDescription}
+  
+  table
+    tbody
+      tr
+        th No.
+        th Title
+        th Description
+      tr
+        td #{i}
+        td #{taskTitle}
+        td #{taskDescription}
+
