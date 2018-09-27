@@ -1,7 +1,7 @@
 # todo of course
 
 
-node.js todo app, where the only one post request send title of task (after check it's no shorter than 10 signs) and (optionally) description (no longer than 255 signs).
+node.js todo app, where the only one post request sends title of task (after check it's no shorter than 10 signs) and (optionally) description (no longer than 255 signs).
 
 ### Installation
 
